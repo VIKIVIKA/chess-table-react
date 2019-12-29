@@ -1,0 +1,17 @@
+.dynamic-table {
+    .dynamic-table-row {
+        // border: 1px solid;
+        line-height: 0;
+        .dynamic-table-cell {
+            border: 1px solid;
+            width: 30px;
+            height: 30px;
+            padding: 20px;
+            display: inline-block;
+            &.active {
+                background-color: yellow;
+                color: black;
+            }
+        }
+    }
+}
