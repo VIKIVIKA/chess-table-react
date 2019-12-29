@@ -20,8 +20,18 @@ class UserInputForm extends React.Component {
     render() {
         return (
             <>
-                <input className={'form-fields'} type='number' onChange={(e) => this.updateLimits(e)} value={this.state.gridSize} name="gridSize" />
-                <input className={'form-fields'} type='number' onChange={(e) => this.updateLimits(e)} value={this.state.movesLimit} name="movesLimit" />
+                <div>
+                    <label>
+                        Grid Size:
+                    </label>
+                    <input className={'form-fields'} type='number' onChange={(e) => this.updateLimits(e)} value={this.state.gridSize} name="gridSize" />
+                </div>
+                <div>
+                    <label>
+                        Moves Limit:
+                    </label>
+                    <input className={'form-fields'} type='number' onChange={(e) => this.updateLimits(e)} value={this.state.movesLimit} name="movesLimit" />
+                </div>
                 <button className={'play-btn'} onClick={this.getTable}>Play Chess</button>
             </>
         );
