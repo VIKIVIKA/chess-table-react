@@ -19,6 +19,7 @@ class ChessGrid extends React.Component {
                 showChessTable: true
             });
         };
+        console.log("test");
     }
     render() {
         return (
