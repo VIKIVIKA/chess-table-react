@@ -1,0 +1,5 @@
+version: 0.2
+artifacts:
+  files:
+    - 'src/components/ChessGrid'
+  name: myname-$(date +%Y-%m-%d) 
