@@ -1,4 +1,4 @@
 version: 0.2
 artifacts:
   files:
-    - ./src/app.js
+    - src/app.js
