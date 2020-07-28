@@ -1,18 +1,4 @@
 version: 0.2
-phases:
-  install: 
-    runtime-versions:
-      nodejs: 8
-    commands:
-      - npm i npm@latest -g
-      - pip install --upgrade pip
-      - pip install --upgrade awscli
-  pre_build:
-    commands:
-      - npm install redoc-cli -g
-  build:
-    commands:
-      - redoc-cli bundle ./orchestra/api/api.yml
 artifacts:
   files:
     - ./src/app.js
